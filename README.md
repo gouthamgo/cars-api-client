@@ -29,6 +29,7 @@ cars.filter(item => {
     //if query is empty
     return cars;
   } else if (item.title.toLowerCase().includes(query.toLowerCase())) {
+    // to avoid any errors caused by the capitaliztion of letters --> so we convert both user query and the name of the data to lowercase
     //returns filtered array
     return cars;
   }
