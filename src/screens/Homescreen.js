@@ -38,6 +38,7 @@ export default function Homescreen() {
         <input placeholder='Enter the Name' onChange={e => setQuery(e.target.value)}/>
 
         {
+            // eslint-disable-next-line array-callback-return
             cars.filter(item=>{
                 if(query === ''){
                     return item;
